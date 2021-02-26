@@ -13,8 +13,8 @@ export default function Dossier({id, titre, couleur, dateModif}) {
         <h2>{titre}</h2>
         <p>{dateModif}</p>
       </div>
-      <button>Modifier</button>
-      <MoreVertIcon />
+      <button className="btn">Modifier</button>
+      <MoreVertIcon className="btnMVI" />
     </article>
   );
 }
