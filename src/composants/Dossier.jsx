@@ -1,8 +1,12 @@
+import './Dossier.scss';
+import SortIcon from '@material-ui/icons/Sort';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 export default function Dossier({id, titre, couleur, dateModif}) {
   return (
     <article className="Dossier">
       <div className="couverture">
         <span className="deplacer">Déplacer</span>
+        <SortIcon/>
         <img src={`images-dossiers/${id}.png`} alt={titre}/>
       </div>
       <div className="info">
@@ -10,6 +14,7 @@ export default function Dossier({id, titre, couleur, dateModif}) {
         <p>{dateModif}</p>
       </div>
       <button>Modifier</button>
+      <MoreVertIcon />
     </article>
   );
 }
